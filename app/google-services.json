@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "817090074423",
+    "firebase_url": "https://salud1-d5903.firebaseio.com",
+    "project_id": "salud1-d5903",
+    "storage_bucket": "salud1-d5903.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817090074423:android:5e27e863c9bc542e",
+        "android_client_info": {
+          "package_name": "mapp.com.sg.salud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817090074423-uhc10u5roebcd995o67pjd14cm6s61o5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mapp.com.sg.salud",
+            "certificate_hash": "21a780c612e0c43b63b8474e054cac7eba1f04f1"
+          }
+        },
+        {
+          "client_id": "817090074423-0op027kfi8trjd9qi17dc75lv0tb482v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1tQIIZvKnIsHDpISGh9dGswkKUP5cDFA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817090074423-0op027kfi8trjd9qi17dc75lv0tb482v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

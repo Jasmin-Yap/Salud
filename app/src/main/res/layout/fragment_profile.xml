@@ -1,0 +1,132 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    tools:context="mapp.com.sg.salud.Fragments.profile">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="25dp">
+
+        <TextView
+            android:id="@+id/TVname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/ETname"
+            app:layout_constraintStart_toStartOf="@+id/ETname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TVPHno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            app:layout_constraintBottom_toTopOf="@+id/ETphNo"
+            app:layout_constraintStart_toStartOf="@+id/ETphNo"
+            app:layout_constraintTop_toBottomOf="@+id/ETmail" />
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="38dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/btntint"
+            android:text="Log Out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEdit" />
+
+        <TextView
+            android:id="@+id/TVmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            app:layout_constraintBottom_toTopOf="@+id/ETmail"
+            app:layout_constraintStart_toStartOf="@+id/ETmail"
+            app:layout_constraintTop_toBottomOf="@+id/ETname" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/btntint"
+            android:onClick="onClick"
+            android:text="Edit"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogOut"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDoneEdit" />
+
+        <EditText
+            android:id="@+id/ETname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginStart="62dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/TVmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVname" />
+
+        <EditText
+            android:id="@+id/ETphNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="53dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginStart="62dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/btnDoneEdit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVPHno" />
+
+        <EditText
+            android:id="@+id/ETmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginStart="62dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/TVPHno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVmail" />
+
+        <Button
+            android:id="@+id/btnDoneEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/btntint"
+            android:onClick="onClick"
+            android:text="Done"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btnEdit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ETphNo" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:theme="@style/AppTheme"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="@dimen/abc_action_bar_default_height_material"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/btnMenuCat"
+        app:layout_constraintStart_toEndOf="@+id/btnMenuCat"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/TVPHno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Phone Number"
+        app:layout_constraintStart_toStartOf="@+id/ETphoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/ETname" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:backgroundTint="@color/btntint"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="@+id/ETmail"
+        app:layout_constraintTop_toBottomOf="@+id/ETphoneNumber" />
+
+    <ImageButton
+        android:id="@+id/btnMenuCat"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="7dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onClick"
+        android:tint="@color/whitetint"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toStartOf="@+id/tvLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="52dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onClick"
+        android:tint="@color/whitetint"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/edit" />
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="10dp"
+        android:text="My Profile"
+        android:textColor="@color/whitetint"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMenuCat"
+        app:layout_constraintEnd_toStartOf="@+id/btnEdit"
+        app:layout_constraintStart_toEndOf="@+id/btnMenuCat"
+        app:layout_constraintTop_toTopOf="@+id/btnMenuCat" />
+
+    <EditText
+        android:id="@+id/ETname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TVname" />
+
+    <EditText
+        android:id="@+id/ETphoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        android:layout_marginStart="53dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVPHno" />
+
+    <EditText
+        android:id="@+id/ETmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btnDoneEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:visibility="invisible"
+        android:backgroundTint="@color/btntint"
+        android:text="Done"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Salud!</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_profile">profile</string>
+
+    <string name="ERROR_USER_EXIST">This email has already been taken.</string>
+    <string name="ERROR_WEAK_PASSWORD">The password is invalid it must 6 characters at least</string>
+    <string name="ERROR_INVALID_EMAIL">The email address is badly formatted.</string>
+    <string name="title_activity_nav">Nav</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addFavs">Add to Favourites</string>
+</resources>
